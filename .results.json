@@ -1,38 +1,35 @@
 {
   "stats": {
     "suites": 2,
-    "tests": 8,
-    "passes": 7,
+    "tests": 10,
+    "passes": 10,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-04-08T19:40:02.823Z",
-    "end": "2021-04-08T19:40:02.857Z",
+    "failures": 0,
+    "start": "2021-04-08T19:49:47.444Z",
+    "end": "2021-04-08T19:49:47.478Z",
     "duration": 34
   },
   "tests": [
     {
-      "title": "defines Matrix.defaultProps",
-      "fullTitle": "<Matrix /> defines Matrix.defaultProps",
+      "title": "uses a default 'values' prop of an array with 10 items",
+      "fullTitle": "<Matrix /> uses a default 'values' prop of an array with 10 items",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected false to equal true",
-        "showDiff": true,
-        "actual": "false",
-        "expected": "true",
-        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-Matrix.test.js:20:63)\n    at processImmediate (internal/timers.js:461:21)",
-        "multiple": [
-          {
-            "name": "AssertionError",
-            "message": "expected false to equal true",
-            "showDiff": true,
-            "actual": "false",
-            "expected": "true",
-            "multiple": "AssertionError: expected false to equal true",
-            "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-Matrix.test.js:20:63)\n    at processImmediate (internal/timers.js:461:21)"
-          }
-        ]
-      }
+      "err": {}
+    },
+    {
+      "title": "each sub-array of the default 'values' prop is an array",
+      "fullTitle": "<Matrix /> each sub-array of the default 'values' prop is an array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "each sub-array of the default values prop is filled with 10 hex color string equal to: '#F00'",
+      "fullTitle": "<Matrix /> each sub-array of the default values prop is filled with 10 hex color string equal to: '#F00'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
     },
     {
       "title": "is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
@@ -79,39 +76,35 @@
     {
       "title": "sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
       "fullTitle": "<Cell /> sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
   ],
   "pending": [],
-  "failures": [
+  "failures": [],
+  "passes": [
     {
-      "title": "defines Matrix.defaultProps",
-      "fullTitle": "<Matrix /> defines Matrix.defaultProps",
+      "title": "uses a default 'values' prop of an array with 10 items",
+      "fullTitle": "<Matrix /> uses a default 'values' prop of an array with 10 items",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected false to equal true",
-        "showDiff": true,
-        "actual": "false",
-        "expected": "true",
-        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-Matrix.test.js:20:63)\n    at processImmediate (internal/timers.js:461:21)",
-        "multiple": [
-          {
-            "name": "AssertionError",
-            "message": "expected false to equal true",
-            "showDiff": true,
-            "actual": "false",
-            "expected": "true",
-            "multiple": "AssertionError: expected false to equal true",
-            "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/0-Matrix.test.js:20:63)\n    at processImmediate (internal/timers.js:461:21)"
-          }
-        ]
-      }
-    }
-  ],
-  "passes": [
+      "err": {}
+    },
+    {
+      "title": "each sub-array of the default 'values' prop is an array",
+      "fullTitle": "<Matrix /> each sub-array of the default 'values' prop is an array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "each sub-array of the default values prop is filled with 10 hex color string equal to: '#F00'",
+      "fullTitle": "<Matrix /> each sub-array of the default values prop is filled with 10 hex color string equal to: '#F00'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
     {
       "title": "is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
       "fullTitle": "<Cell /> is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
@@ -157,7 +150,7 @@
     {
       "title": "sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
       "fullTitle": "<Cell /> sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
